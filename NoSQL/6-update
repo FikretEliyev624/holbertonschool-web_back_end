@@ -1,5 +1,7 @@
-// 6-update
+// Update all documents with name "Holberton school" by adding address
+
 db.school.update(
-  { name: "Holberton school" },
-  { $set: { address: "972 Mission street" } }
+  { name: "Holberton school" },          
+  { $set: { address: "972 Mission street" } }, 
+  { multi: true }                        
 )
